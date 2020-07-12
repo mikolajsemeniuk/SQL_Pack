@@ -35,8 +35,7 @@ $types = @(
         Write-Output "$type" 
     } 
     else { 
-        Write-Output 'System.String' 
-         
+        Write-Output 'System.String'  
     } 
 }
 
