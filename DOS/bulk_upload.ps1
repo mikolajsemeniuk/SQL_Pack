@@ -1,8 +1,16 @@
-# Read csv file 
-# open connection to database using bulkcopy
-# convert array to data table
-# bulkload data into table
-# note: column sequence and data types should match
+# ============================================
+#
+#   1. Read csv file 
+#   2. Open connection to database using bulkcopy
+#   3. Convert array to data table
+#   4. Bulkload data into table
+#
+#   *  Note: Column sequence and data types should match
+#   ** Source: https://gallery.technet.microsoft.com/scriptcenter/4208a159-a52e-4b99-83d4-8048468d29dd
+#
+# ============================================
+
+
 
 # ============================================
 #
