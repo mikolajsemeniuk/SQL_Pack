@@ -26,29 +26,32 @@ VALUES
  
 SELECT * FROM [P]
 ```
-## Insert values from existing table
+## Insert from existing table
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 ```sql
 INSERT INTO
   [P] ([Uno], [Dos], [Tres], [Cuatro])
 SELECT 
-  [Uno], [Dos], [Tres], [Cuatro]
+  [Tres], [Cuatro], [Dos] -- [Cuatro] will be a null 
 FROM
   [Q]
  
 SELECT * FROM [Test]
+```
+## Insert whole table into another table
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+```sql
+
+INSERT INTO [P] SELECT * FROM [Q]
+
+SELECT * FROM [P]
 ```
 ## Insert values from existing table into new table
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 ```sql
 DROP TABLE IF EXISTS [Q]
 
-SELECT
-  *
-INTO
-  [Q]
-FROM
-  [P]
- 
-SELECT * FROM [Test]
+SELECT * INTO [P] FROM [Q]
+
+SELECT * FROM [P]
 ```
