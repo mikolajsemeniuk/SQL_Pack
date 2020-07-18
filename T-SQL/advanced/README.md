@@ -2,7 +2,7 @@
 lorem ipsum
 ## Variables
 lorem ipsum
-```
+```sql
 DECLARE v1 VARCHAR(255)
 SET v1 = 'some text'
 DECLARE v2 FLOAT(12)
