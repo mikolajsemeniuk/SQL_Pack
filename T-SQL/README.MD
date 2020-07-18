@@ -12,8 +12,5 @@ CREATE TABLE [Test] (
   [Cuatro] BIGINT
 )
 
-SELECT
-  *
-FROM
-  [Test]
+SELECT * FROM [Test]
 ```
