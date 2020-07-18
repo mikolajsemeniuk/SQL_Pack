@@ -41,18 +41,6 @@ BEGIN
   SET @i = @i + 1
 END
 ```
-## Loops
-lorem ipsum
-```sql
-DECLARE @i INT
-SET @i = 1
-
-WHILE (@i < 10)
-BEGIN
-  PRINT 'i: ' + CAST(@i AS VARCHAR) + CHAR(13) + CHAR(10)
-  SET @i = @i + 1
-END
-```
 ## Get count to variable
 lorem ipsum
 ```sql
@@ -123,7 +111,7 @@ FROM
 ORDER BY
   NEWID()
 ```
-## transfer one random row from one table to another 
+## Transfer one random row from one table to another 
 lorem ipsum
 ```sql
 WITH CTE AS (
