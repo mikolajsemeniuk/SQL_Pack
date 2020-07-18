@@ -2,5 +2,5 @@
 lorem ipsum
 ## Update
 ```sql
-DROP
+DROP TABLE IF EXISTS
 ```
