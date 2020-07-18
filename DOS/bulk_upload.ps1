@@ -7,6 +7,7 @@
 # ============================================
 #
 #   Cast powershell types to our csv object
+# --------------------------------------------
 #
 # ============================================
 function Get-Type 
@@ -43,7 +44,7 @@ $types = @(
 # ============================================
 #
 #   Save csv file to PowerShell object
-#   to insert to database
+# --------------------------------------------
 #
 # ============================================
 function Out-DataTable 
@@ -69,18 +70,25 @@ function Out-DataTable
                     $Col.ColumnName = $property.Name.ToString()   
                     if ($property.value) 
                     { 
-                        if ($property.value -isnot [System.DBNull]) { 
+                        if ($property.value -isnot [System.DBNull]) 
+                        { 
                             $Col.DataType = [System.Type]::GetType("$(Get-Type $property.TypeNameOfValue)") 
                         }
                     } 
                     $DT.Columns.Add($Col) 
                 }   
-                if ($property.Gettype().IsArray) { 
+                if ($property.Gettype().IsArray) 
+                { 
                     $DR.Item($property.Name) = $property.value | ConvertTo-XML -AS String -NoTypeInformation -Depth 1 
-                } else {
-                    if($property.value -eq "") {
+                } 
+                else 
+                {
+                    if($property.value -eq "") 
+                    {
                         $DR.Item($property.Name) = $null
-                    } else {
+                    } 
+                    else 
+                    {
                         $DR.Item($property.Name) = $property.value 
                     }
                 } 
@@ -89,27 +97,31 @@ function Out-DataTable
             $First = $false 
         } 
     }  
-      
     End 
     { 
         Write-Output @(,($dt)) 
-    } 
- 
+    }
 }
 
 # ============================================
 #
 #   Catch parameters in variables
+# --------------------------------------------
 #
+#   $file => Path to csv e.g. "C:\Users\ctr_semenium\Downloads\Report_AP.csv"
+#   $dbserver => Name of server e.g. "development.amazonaws.com"
+#   $database => Name of database e.g. "CatalogDEV"
+#   $table => Name of table e.g. "MyTable"
 # ============================================
-$file = $args[0] # Path to csv e.g. "C:\Users\ctr_semenium\Downloads\Report_AP - Formated.csv"
-$dbserver = $args[1] # Name of server e.g. "development.amazonaws.com"
-$database = $args[2] # Name of database e.g. "CatalogDEV"
-$table = $args[3] # Name of table e.g. "MyTable"
+$file = $args[0]
+$dbserver = $args[1] 
+$database = $args[2] 
+$table = $args[3] 
 
 # ============================================
 #
 #   Open connection with database
+# --------------------------------------------
 #
 # ============================================
 $cn = new-object System.Data.SqlClient.SqlConnection("Data Source=$dbserver;Integrated Security=SSPI;Initial Catalog=$database");
@@ -117,13 +129,14 @@ $cn.Open()
 $bc = new-object ("System.Data.SqlClient.SqlBulkCopy") $cn
 $bc.BatchSize = 10000;
 $bc.BulkCopyTimeout = 10000;
-$bc.DestinationTableName = "[AutomationDEV].[SNCORP\ctr_semenium].[$table]" # full name database + table
+$bc.DestinationTableName = "[$database].[$table]" # full name database + table
 
 # ============================================
 #
 #   Import csv to database by using
 #   Out-DataTable function
-#
+# --------------------------------------------
+#   
 #   Remove -Delimiter ";" if you would
 #   like to upload csv separeted by ","
 #   instead of ";"
@@ -131,3 +144,5 @@ $bc.DestinationTableName = "[AutomationDEV].[SNCORP\ctr_semenium].[$table]" # fu
 # ============================================
 $data = Import-Csv $file -Delimiter ";" | Out-DataTable
 $bc.WriteToServer($data)
+
+Write-Host '$file successfully uploaded to $table in $database'
