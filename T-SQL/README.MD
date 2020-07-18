@@ -32,9 +32,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 INSERT INTO
   [P] ([Uno], [Dos], [Tres], [Cuatro])
 SELECT 
-  *
+  [Uno], [Dos], [Tres], [Cuatro]
 FROM
   [Q]
+ 
+SELECT * FROM [Test]
+```
+## Insert values from existing table into new table
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+```sql
+DROP TABLE IF EXISTS [Q]
+
+SELECT
+  *
+INTO
+  [Q]
+FROM
+  [P]
  
 SELECT * FROM [Test]
 ```
