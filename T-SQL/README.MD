@@ -11,4 +11,9 @@ CREATE TABLE [Test] (
   [Tres] FLOAT(12),
   [Cuatro] BIGINT
 )
+
+SELECT
+  *
+FROM
+  [Test]
 ```
