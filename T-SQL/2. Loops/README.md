@@ -45,7 +45,7 @@ END
 
 ## Get single value
 
-Break loop when we meet our condition like e.g. reach the fifth row like above
+Get single value from certain column
 
 ```sql
 -- Declare loop
