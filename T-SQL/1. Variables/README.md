@@ -32,7 +32,7 @@ PRINT 'len: ' + CAST(@len AS VARCHAR)
 ```
 
 ## Catch certain value from table to variable
-Declare sample int
+Get first value from column 'col1'
 ```sql
 DECLARE @val VARCHAR(255)
 SET @val = (
@@ -49,18 +49,31 @@ PRINT 'val: ' + @val
 ```
 
 ## Get whole row
-Declare sample int
+Get whole first row from table
 ```sql
-DECLARE @val VARCHAR(255)
-SET @val = (
-  SELECT
-    [col1] --Y position
-  FROM
+DECLARE @row VARCHAR(MAX)
+SELECT 
+    @row = @row + [col1] + ',' + [col2] + ',' + [col3] -- Remember to use CAST(col3 AS VARCHAR) or CAST(ISNULL(col3, 0) AS VARCHAR) 
+FROM
     [Table]
-   ORDER BY
+ORDER BY
     (SELECT NULL)
-   OFFSET 1 ROWS -- X position
-    FETCH NEXT 1 ROWS ONLY -- Range of rows
-)
-PRINT 'val: ' + @val
+OFFSET 1 ROWS
+    FETCH NEXT 1 ROWS ONLY
+PRINT 'row: ' + @row
+```
+
+## Get whole row
+Get all values from column 'col1' from table
+```sql
+DECLARE @col VARCHAR(MAX)
+SELECT 
+    @col = COALESCE(@col + ',', '') + CONVERT(VARCHAR(255), [col1])
+FROM
+    [Table]
+ORDER BY
+    (SELECT NULL)
+OFFSET @i ROWS
+    FETCH NEXT 1 ROWS ONLY
+PRINT 'col: ' + @col
 ```
