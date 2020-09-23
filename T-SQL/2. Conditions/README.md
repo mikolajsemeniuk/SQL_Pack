@@ -36,14 +36,14 @@ SELECT
     [col1],
     [col2],
     (
-    CASE
-        WHEN [col1] IS NOT NULL THEN
-            'not null, ' + [col1]
-        WHEN [col2] IS NOT NULL THEN
-            'not null, ' + [col2]
-        ELSE
-            'null, ' + [col3] 
-    END
+      CASE
+          WHEN [col1] IS NOT NULL THEN
+              'not null, ' + [col1]
+          WHEN [col2] IS NOT NULL THEN
+              'not null, ' + [col2]
+          ELSE
+              'null, ' + [col3] 
+      END
     ),
     [col3]
 FROM
