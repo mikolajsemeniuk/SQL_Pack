@@ -16,3 +16,28 @@ SELECT
 FROM
     [Table]
 ```
+
+## SPLIT - simple usage
+This function gonna return rows splited by given value, we have to use 'value' after SELECT
+```sql
+SELECT 
+    value
+FROM 
+    STRING_SPLIT('Lorem ipsum dolor', ' ')
+```
+## SUBSTRING - simple usage
+This function gonna return rows splited by given value, we have to use 'value' after SELECT
+```sql
+SELECT 
+    SUBSTRING([col1], 1, LEN([col1]))
+FROM 
+    [Table]
+```
+## ISNULL - simple usage
+This function gonna return rows splited by given value, we have to use 'value' after SELECT
+```sql
+SELECT 
+    ISNULL([col1], '')
+FROM 
+    [Table]
+```
