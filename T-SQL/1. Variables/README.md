@@ -47,3 +47,20 @@ SET @val = (
 )
 PRINT 'val: ' + @val
 ```
+
+## Get whole row
+Declare sample int
+```sql
+DECLARE @val VARCHAR(255)
+SET @val = (
+  SELECT
+    [col1] --Y position
+  FROM
+    [Table]
+   ORDER BY
+    (SELECT NULL)
+   OFFSET 1 ROWS -- X position
+    FETCH NEXT 1 ROWS ONLY -- Range of rows
+)
+PRINT 'val: ' + @val
+```
