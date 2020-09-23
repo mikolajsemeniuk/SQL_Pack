@@ -11,14 +11,14 @@ PRINT 'i: ' + CAST(@i AS VARCHAR)
 ```
 
 ## Declare string
-Declare sample int
+Declare sample string
 ```sql
 DECLARE @n VARCHAR(255)
 SET @n = 'Hi SQL'
 PRINT 'i: ' + @n
 ```
 
-## Catch length of table to variable
+## Get length
 Declare sample int
 ```sql
 DECLARE @len BIGINT
@@ -31,7 +31,7 @@ SET @len = (
 PRINT 'len: ' + CAST(@len AS VARCHAR)
 ```
 
-## Catch certain value from table to variable
+## Get value
 Get first value from column 'col1'
 ```sql
 DECLARE @val VARCHAR(255)
@@ -48,7 +48,7 @@ SET @val = (
 PRINT 'val: ' + @val
 ```
 
-## Get whole row
+## Get row
 Get whole first row from table
 ```sql
 DECLARE @row VARCHAR(MAX)
@@ -63,7 +63,7 @@ OFFSET 1 ROWS
 PRINT 'row: ' + @row
 ```
 
-## Get whole row
+## Get column
 Get all values from column 'col1' from table
 ```sql
 DECLARE @col VARCHAR(MAX)
