@@ -51,7 +51,7 @@ Break loop when we meet our condition like e.g. reach the fifth row like above
 -- Declare loop
 WHILE(@i < @len)
 BEGIN
-    -- 
+    -- Get single value from col1
     DECLARE @val VARCHAR(255)
     SET @val = (
         SELECT
