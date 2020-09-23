@@ -6,7 +6,7 @@ In this section You would know how to:
 * Save value from certain column and certain row even if You don't have 'ID' column to string variable.
 * Save whole certain row if You don't have 'ID' column to string variable.
 * Save whole column row to string variable.
-* Declare and temporary table for store certain rows
+* Declare and temporary table for store certain rows.
 
 ## Declare int
 Declare and assign sample int
