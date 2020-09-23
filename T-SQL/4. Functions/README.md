@@ -5,6 +5,7 @@ In this section we gonna focus on most used built-in functions and their example
 * SPLIT
 * SUBSTRING
 * ISNULL
+* TRY_CONVERT
 
 ## REPLACE - simple usage
 This function gonna return a replaced string
@@ -106,6 +107,15 @@ Let's use this ISNULL to prevent failed concatenating the string when 'col1' is 
 ```sql
 SELECT 
     ISNULL([col1], '') + ISNULL([col2], '')
+FROM 
+    [Table]
+```
+
+## TRY_CONVERT
+If the function could change value to certain type the value would change otherwise value is null 
+```sql
+SELECT 
+    TRY_CONVERT(float, [col3])
 FROM 
     [Table]
 ```
