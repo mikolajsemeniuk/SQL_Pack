@@ -19,7 +19,7 @@ PRINT 'i: ' + @n
 ```
 
 ## Get length
-Declare sample int
+Get number of all rows from table to variable
 ```sql
 DECLARE @len BIGINT
 SET @len = (
@@ -32,7 +32,7 @@ PRINT 'len: ' + CAST(@len AS VARCHAR)
 ```
 
 ## Get value
-Get first value from column 'col1'
+Get first value from column 'col1' to variable
 ```sql
 DECLARE @val VARCHAR(255)
 SET @val = (
@@ -49,7 +49,7 @@ PRINT 'val: ' + @val
 ```
 
 ## Get row
-Get whole first row from table
+Get whole first row from table to variable
 ```sql
 DECLARE @row VARCHAR(MAX)
 SELECT 
@@ -64,7 +64,7 @@ PRINT 'row: ' + @row
 ```
 
 ## Get column
-Get all values from column 'col1' from table
+Get all values from column 'col1' from table to variable
 ```sql
 DECLARE @col VARCHAR(MAX)
 SELECT 
