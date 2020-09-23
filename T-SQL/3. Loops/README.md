@@ -4,6 +4,7 @@ So far we've learned how to store data and make conditional statements
 In this section we gonna learn how to:
 * Save value from col1 from every row to variable and print it.
 * Exit While loop.
+
 Using previous declared and assign variables @i = 0 and @len = 7 every part of code executes 7 times
 
 ## Get Value
