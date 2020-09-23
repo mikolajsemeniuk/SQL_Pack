@@ -37,7 +37,7 @@ Declare sample int
 DECLARE @val VARCHAR(255)
 SET @val = (
   SELECT
-    [col1] -Y position
+    [col1] --Y position
   FROM
     [Table]
    ORDER BY
