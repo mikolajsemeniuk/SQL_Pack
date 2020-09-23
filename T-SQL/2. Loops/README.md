@@ -80,7 +80,7 @@ END
 
 ## Get whole column
 
-Get whole column which m
+Get all values from col1 where col2 is not null
 
 ```sql
 
@@ -118,7 +118,7 @@ END
 
 ## Break loop
 
-Break loop when we meet our condition like e.g. reach the fifth row like aboce
+Break loop when we meet our condition like e.g. reach the fifth row like above
 
 ```sql
 -- Declare loop
