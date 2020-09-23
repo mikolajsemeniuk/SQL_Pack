@@ -17,7 +17,7 @@ EXEC sp_rename 'Catalog.Schema."Table"', 'Table_New'
 ```
 
 ## Change type
-Change type of column 'col1' from VARCHAR(255) to DATE if even one value if null function failed
+Change type of column 'col1' from VARCHAR(255) to DATE if even one value is null function failes
 ```sql
 ALTER TABLE
   [Table]
