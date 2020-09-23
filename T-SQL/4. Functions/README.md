@@ -5,6 +5,7 @@ In this section we gonna focus on most used built-in functions and their example
 * SPLIT
 * SUBSTRING
 * ISNULL
+
 ##REPLACE - simple usage
 This function gonna return a replaced string
 ```sql
