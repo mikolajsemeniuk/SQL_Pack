@@ -78,6 +78,43 @@ BEGIN
 END
 ```
 
+## Get whole row
+
+Get all values from whole rows as string
+
+```sql
+
+-- Declare row outside the loop because sometime value is not overwrite in loop scope and we have to clean it manually
+DECLARE @row VARCHAR(MAX)
+SET @row = ''
+
+-- Declare loop
+WHILE(@i < @len)
+BEGIN
+    -- Get whole row (have to write all columns names + ',')
+    SELECT 
+        @row = @row + [col1] + ',' + [col2] + ',' + [col3] -- Remember to use CAST(col3 AS VARCHAR) or CAST(ISNULL(col3, 0) AS VARCHAR) 
+    FROM
+        [Table]
+    ORDER BY
+        (SELECT NULL)
+    OFFSET @i ROWS
+        FETCH NEXT 1 ROWS ONLY
+    
+    -- Print number of iterations
+    PRINT 'i: ' + CAST(@i AS VARCHAR) 
+    
+    -- Print catched value
+    PRINT 'row: ' + @row -- no need to cast value becuase @val is type of VARCHAR(255) so there is no problem with concatenate 
+ 
+    -- clear values just to make sure because sometimes Declaring in loop scope doesn't overwrite @val value 
+    SET @row = NULL
+ 
+    -- Increase iterator to avoid infinitive loop
+    SET @i = @i + 1
+END
+```
+
 ## Get whole column
 
 Get all values from col1 where col2 is not null
