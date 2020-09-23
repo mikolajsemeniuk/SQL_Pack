@@ -160,7 +160,7 @@ BEGIN
         FETCH NEXT 1 ROWS ONLY
     
     PRINT 'i: ' + CAST(@i AS VARCHAR) 
-    PRINT 'col: ' + @col -- no need to cast value becuase @val is type of VARCHAR(255) so there is no problem with concatenate 
+    PRINT 'col: ' + @col
  
     SET @col = NULL
     SET @i = @i + 1
