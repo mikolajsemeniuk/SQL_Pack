@@ -23,7 +23,7 @@ SET @len = (
     SELECT
         COUNT(*)
     FROM
-        [Table A]
+        [Table]
 )
 ```
 
@@ -42,6 +42,43 @@ BEGIN
     SET @i = @i + 1
 END
 ```
+
+## Get single value
+
+Break loop when we meet our condition like e.g. reach the fifth row like aboce
+
+```sql
+-- Declare loop
+WHILE(@i < @len)
+BEGIN
+    -- 
+    DECLARE @val VARCHAR(255)
+    SET @val = (
+        SELECT
+            [col1]
+        FROM
+            [Table]
+        ORDER BY
+            (SELECT NULL)
+        OFFSET @i ROWS
+            FETCH ONLY 1 ROWS ONLY
+    )
+    
+    -- Print number of iterations
+    PRINT 'i: ' + CAST(@i AS VARCHAR) 
+    
+    -- Print catched value
+    PRINT 'val: ' + @val -- no need to cast value becuase @val is type of VARCHAR(255) so there is no problem with concatenate 
+ 
+    -- clear values just to make sure because sometimes Declaring in loop scope doesn't overwrite @val value 
+    -- SET @val = NULL
+ 
+    -- Increase iterator to avoid infinitive loop
+    SET @i = @i + 1
+END
+```
+
+
 
 ## Break loop
 
