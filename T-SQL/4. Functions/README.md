@@ -106,7 +106,7 @@ FROM
 Let's use this ISNULL to prevent failed concatenating the string when 'col1' is null
 ```sql
 SELECT 
-    ISNULL([col1], '') + ISNULL([col2], '')
+    CAST(ISNULL([col1], 0) AS VARCHAR) + ISNULL([col2], '')
 FROM 
     [Table]
 ```
