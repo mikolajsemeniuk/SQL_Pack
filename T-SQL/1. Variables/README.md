@@ -8,7 +8,7 @@ In this section You would know how to:
 * Save whole column row to string variable.
 
 ## Declare int
-Declare sample int
+Declare and assign sample int
 ```sql
 DECLARE @i BIGINT
 SET @i = 0
@@ -16,7 +16,7 @@ PRINT 'i: ' + CAST(@i AS VARCHAR)
 ```
 
 ## Declare string
-Declare sample string
+Declare and assign sample string
 ```sql
 DECLARE @n VARCHAR(255)
 SET @n = 'Hi SQL'
