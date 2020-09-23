@@ -6,7 +6,7 @@ In this section we gonna focus on most used built-in functions and their example
 * SUBSTRING
 * ISNULL
 
-##REPLACE - simple usage
+## REPLACE - simple usage
 This function gonna return a replaced string
 ```sql
 SELECT
