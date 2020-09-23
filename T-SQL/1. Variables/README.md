@@ -18,7 +18,7 @@ SET @n = 'Hi SQL'
 PRINT 'i: ' + @n
 ```
 
-## Catch lenght of table to variable
+## Catch length of table to variable
 Declare sample int
 ```sql
 DECLARE @len BIGINT
