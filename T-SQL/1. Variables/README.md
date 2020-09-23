@@ -37,7 +37,7 @@ PRINT 'len: ' + CAST(@len AS VARCHAR)
 ```
 
 ## Get value
-Get first value from column 'col1' to variable
+Get first value from column 'col1' to variable even if You don't have 'ID' column
 ```sql
 DECLARE @val VARCHAR(255)
 SET @val = (
@@ -54,7 +54,7 @@ PRINT 'val: ' + @val
 ```
 
 ## Get row
-Get whole first row from table to variable
+Get whole first row from table to variable even if You don't have 'ID' column
 ```sql
 DECLARE @row VARCHAR(MAX)
 SELECT 
