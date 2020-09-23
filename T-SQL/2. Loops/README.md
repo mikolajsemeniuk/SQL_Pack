@@ -1,6 +1,6 @@
 # Loops
 
-Foobar is a Python library for dealing with word pluralization.
+This readme shows You how to make loops in T-SQL
 
 ## Get iterator
 
@@ -14,7 +14,7 @@ SET @i = 0
 
 ## Get length of all rows
 
-Iterating through all records
+Get length of all rows to know how many iterations we have to do when we would like to go through whole table
 
 ```sql
 -- Get len of all rows
@@ -29,14 +29,15 @@ SET @len = (
 
 ## Make simple loop
 
-Get iterator to know when to finish the loop
+Make simple loop with @i and @len and print all iterations
 
 ```sql
 -- Declare loop
 WHILE(@i < @len)
 BEGIN
     -- Print number of iterations
-    PRINT 'i: ' + CAST(@i AS VARCHAR) 
+    PRINT 'i: ' + CAST(@i AS VARCHAR)
+    
     -- Increase iterator to avoid infinitive loop
     SET @i = @i + 1
 END
@@ -44,7 +45,7 @@ END
 
 ## Break loop
 
-Get iterator to know when to finish the loop
+Break loop when we meet our condition like e.g. reach the fifth row like aboce
 
 ```sql
 -- Declare loop
