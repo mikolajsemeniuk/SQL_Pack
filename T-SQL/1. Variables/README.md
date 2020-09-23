@@ -1,7 +1,7 @@
 # Variables
 
 In this section You would know how to: 
-* Create and assign custom value to variables in T-SQL.
+* Create and assign custom values to variables in T-SQL.
 * How to get number of all rows from tables if you need to iterate through whole table.
 * Save value from certain column and certain row even if You don't have 'ID' column to string variable.
 * Save whole certain row if You don't have 'ID' column to string variable.
