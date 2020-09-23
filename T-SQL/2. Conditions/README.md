@@ -32,7 +32,10 @@ END
 ## Conditional SELECT
 Let's make conditional select and concatenate string to result
 ```sql
-SELECT (
+SELECT
+    [col1],
+    [col2],
+    (
     CASE
         WHEN [col1] IS NOT NULL THEN
             'not null, ' + [col1]
@@ -41,7 +44,8 @@ SELECT (
         ELSE
             'null, ' + [col3] 
     END
-)
+    ),
+    [col3]
 FROM
     [Table]
 ```
@@ -55,6 +59,14 @@ SET
     [col1] = (
       CASE
           WHEN [col2] IS NOT NULL THEN
+              '1'
+          ELSE
+              '0'
+      END
+    ),
+    [col2] = (
+      CASE
+          WHEN [col3] IS NOT NULL THEN
               '1'
           ELSE
               '0'
