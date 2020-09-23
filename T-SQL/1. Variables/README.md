@@ -1,6 +1,11 @@
 # Variables
 
-Lorem ipsum
+In this section You would know how to: 
+* Create and assign custom value to variables in T-SQL.
+* How to get number of all rows from tables if you need to iterate through whole table.
+* Save value from certain column and certain row even if You don't have 'ID' column to string variable.
+* Save whole certain row if You don't have 'ID' column to string variable.
+* Save whole column row to string variable.
 
 ## Declare int
 Declare sample int
@@ -71,9 +76,5 @@ SELECT
     @col = COALESCE(@col + ',', '') + CONVERT(VARCHAR(255), [col1])
 FROM
     [Table]
-ORDER BY
-    (SELECT NULL)
-OFFSET @i ROWS
-    FETCH NEXT 1 ROWS ONLY
 PRINT 'col: ' + @col
 ```
