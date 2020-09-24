@@ -10,7 +10,7 @@ In this section You would know how to:
 
 **Enjoy !** :wink:
 
-[Go back](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL)
+[Go back](https://github.com/mikolajs123/SQL_Pack/tree/master)
 
 ## Declare int
 Declare and assign sample int
