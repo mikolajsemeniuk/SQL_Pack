@@ -1,4 +1,4 @@
-# :hash: Subqueries
+# :collision: Subqueries
 Lorem ipsum
 
 **Enjoy !** :wink:
