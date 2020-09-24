@@ -10,6 +10,8 @@ In this section You would know how to:
 
 **Enjoy !** :wink:
 
+[Go back](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL)
+
 ## Declare int
 Declare and assign sample int
 ```sql
@@ -89,3 +91,5 @@ DECLARE @temp table (col1 BIGINT, col2 VARCHAR(MAX))
 INSERT INTO @temp VALUES (1, 'Hi')
 SELECT * FROM @temp
 ```
+
+[Go back](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL)
