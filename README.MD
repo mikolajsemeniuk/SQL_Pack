@@ -1,9 +1,11 @@
-# SQL Pack
+# :collision: SQL Pack
 This repository helps you better understand SQL and go deeper with such stuff like:
-* variables 
-* loops 
-* conditions
+* Variables
+* Conditions
+* Loops
+* Change names and types
 * CTE
+* Subqueries
 
 and the other stuff which You need to know to freely make anything You wish to do in MySQL, PostgresSQL and T-SQL as well.
 
