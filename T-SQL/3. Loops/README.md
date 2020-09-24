@@ -7,6 +7,8 @@ In this section we gonna learn how to:
 
 Using previous declared and assign variables @i = 0 and @len = 7 every part of code executes 7 times
 
+Enjoy ! :wink:
+
 ## Get Value
 Let's declare and assign value from n row and from col1 to variable 'val' in a loop and print it as well
 ```sql
@@ -26,6 +28,7 @@ BEGIN
             FETCH ONLY 1 NEXT ROWS
     )
     
+    PRINT 'i: ' + CAST(@i AS VARCHAR)
     PRINT 'val: ' + @val
     
     SET @i = @i + 1
@@ -52,6 +55,7 @@ BEGIN
             FETCH ONLY 1 NEXT ROWS
     )
     
+    PRINT 'i: ' + CAST(@i AS VARCHAR)
     PRINT 'val: ' + @val
     
     IF @val IS NULL
