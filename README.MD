@@ -1,11 +1,14 @@
 # :collision: SQL Pack
 This repository helps you better understand SQL and go deeper with such stuff like:
-* [Variables](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL/1.%20Variables)
-* Conditions
-* Loops
-* Change names and types
-* CTE
-* Subqueries
+* T-SQL
+  * [Variables](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL/1.%20Variables)
+  * Conditions
+  * Loops
+  * Change names and types
+  * CTE
+  * Subqueries
+* PostgresSQL
+  * [Variables](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL/1.%20Variables)
 
 and the other stuff which You need to know to freely make anything You wish to do in MySQL, PostgresSQL and T-SQL as well.
 
