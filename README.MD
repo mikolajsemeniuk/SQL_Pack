@@ -1,6 +1,6 @@
 # :collision: SQL Pack
 This repository helps you better understand SQL and go deeper with such stuff like:
-* Variables
+* [Variables](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL/1.%20Variables)
 * Conditions
 * Loops
 * Change names and types
