@@ -10,10 +10,6 @@ In this section You would know how to:
 
 **Enjoy !** :wink:
 
-```diff
-+ text in green
-```
-
 ## Declare int
 Declare and assign sample int
 ```sql
