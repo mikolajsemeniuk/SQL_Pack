@@ -7,7 +7,7 @@ In this section we gonna learn how to:
 
 Using previous declared and assign variables @i = 0 and @len = 7 every part of code executes 7 times
 
-*Enjoy !* :wink:
+**Enjoy !** :wink:
 
 ## Get Value
 Let's declare and assign value from n row and from col1 to variable 'val' in a loop and print it as well
