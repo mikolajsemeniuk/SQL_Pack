@@ -1,7 +1,7 @@
 # Change
 In this section we gonna learn how to change name of column, name of table and type of column and check type as well
 
-Enjoy! ;)
+Enjoy! :wink:
 
 ## Rename column
 Rename column 'col1' to 'col22'
