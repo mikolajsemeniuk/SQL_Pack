@@ -7,6 +7,8 @@ In this section we gonna focus on most used built-in functions and their example
 * ISNULL
 * TRY_CONVERT
 
+**Enjoy !** :wink:
+
 ## REPLACE - simple usage
 This function gonna return a replaced string
 ```sql
