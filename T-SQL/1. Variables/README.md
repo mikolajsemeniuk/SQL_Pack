@@ -10,7 +10,9 @@ In this section You would know how to:
 
 **Enjoy !** :wink:
 
-![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
+```diff
++ text in green
+```
 
 ## Declare int
 Declare and assign sample int
