@@ -1,6 +1,16 @@
 # CTE
 In this section we gonna focus on CTE which comes with such great functionalities like edit, remove or even transfer specific rows without id column or using 'WHERE' clause.
-Moreover when we remove, edit or transfer from CTE we manipulate our original Table we wish to change.
+
+The idea behind CTE is simple. We make our temporary tamble called CTE (but we could call whatever we like) and when we manipulate our CTE table we make the manipulations on original table we wish to change.
+
+You gonna learn how to:
+* update specific rows and columns and range of rows as well.
+* remove specific rows and columns and range of rows as well.
+* transfer specific rows and columns and range of rows to another table.
+* remove duplicates with original values.
+* remove all duplicates rows.
+
+Enjoy !
 
 ## Update specific rows
 Update specific rows rows, columns and range of rows
