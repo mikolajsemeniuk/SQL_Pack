@@ -1,6 +1,6 @@
 # :collision: SQL Pack
 This repository helps you better understand SQL and go deeper with such stuff like:
-* [T-SQL](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL)
+1. [T-SQL](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL)
   1. [Variables](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL/1.%20Variables)
   1. [Conditions](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL/2.%20Conditions)
   1. [Loops](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL/3.%20Loops)
