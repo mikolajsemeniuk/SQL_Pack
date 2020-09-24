@@ -10,7 +10,7 @@ In this section You would know how to:
 
 **Enjoy !** :wink:
 
-![Go back](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
 
 ## Declare int
 Declare and assign sample int
