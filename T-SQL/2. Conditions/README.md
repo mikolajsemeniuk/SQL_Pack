@@ -5,6 +5,8 @@ In this section we gonna learn how to:
 * Make conditional SELECT 
 * Make conditional UPDATE
 
+**Enjoy !** :wink:
+
 ## Simple If/Else
 Let's execute simple part of code depedens of our variable @custom of type int
 ```sql
