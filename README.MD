@@ -11,8 +11,7 @@ This repository helps you better understand SQL and go deeper with such stuff li
 * PostgresSQL
   * [Variables](https://github.com/mikolajs123/SQL_Pack/tree/master/T-SQL/1.%20Variables)
 
-and the other stuff which You need to know to freely make anything You wish to do in
-MySQL, PostgresSQL and T-SQL as well.
+and the other stuff which You need to know to freely make anything You wish to do in MySQL, PostgresSQL and T-SQL as well.
 
 ## Let's get it started
 Let's start with creating sample dummy table to start with
