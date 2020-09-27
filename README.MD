@@ -13,9 +13,6 @@ This repository helps you better understand SQL and go deeper with such stuff li
 
 and the other stuff which You need to know to freely make anything You wish to do in MySQL, PostgresSQL and T-SQL as well.
 
-## Let's get it started
-Let's start with creating sample dummy table to start with
-
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
